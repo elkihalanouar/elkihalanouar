@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Aquire';
+    src: url(./AquireLight-YzE0o.otf)
+}
+
+body {
+    background-color: #283635;
+    font-family: 'Anybody', cursive;
+    /*font-family: 'Aquire', sans serif;*/
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #374b49;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul li {
+    margin: 10px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    color: #6aadaa;
+}
+
+#navbar ul li a:active {
+    opacity: 0.7;
+}
+
+#homePage, #aboutPage, #skillsPage{
+    height: 100vh;
+    width: 100%;
+    border-bottom: 10px solid #1c1d1d;
+}
+
+#homePage {
+    background-image: url("./images/code1.jpg");
+    /*background-size: cover;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6aadaa;
+    padding: 100px;
+    text-transform: uppercase;
+}
+
+.aboutSection {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.aboutParagraph {
+    width: 750px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#aboutBtn {
+    cursor: pointer;
+    border: none;
+    width: 250px;
+    height: 50px;
+    margin-top: 25px;
+    border-radius: 5px;
+    font-family: 'Anybody', cursive;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #6aadaa;
+    outline: none;
+}
+
+#aboutBtn:hover {
+    opacity: 0.8;
+}
+
+#aboutBtn:active {
+    opacity: 0.6;
+}
+
+.skillsSection, .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillsSection {
+    height: 300px;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin: 20px;
+    line-height: 100px;
+    font-size: 40px;
+    box-shadow: 5px 10px 20px black;
+    background-color: #6aadaa;
+    color: white;
+}
+
+.icon:hover {
+    opacity: 0.8;
+}
+
+#projectsPage {
+    height: 220vh;
+    border-bottom: 10px solid #1c1d1d;
+}
+
+#projectsPage .all-projects, .project-item, .project-info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#projectsPage .project-item {
+	width: 80%;
+	margin: 20px auto;
+	border-radius: 10px;
+}
+
+#projectsPage .project-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	align-items: flex-start;
+	/*background-image: linear-gradient(60deg, black, #6aadaa 100%);*/
+    background-image: linear-gradient(60deg, black, #2e5452 100%);
+	color: white;
+    box-shadow: 20px 10px 5px black;
+    /*box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.15);*/
+    border-radius: 20px;
+    line-height: 25px;
+}
+
+#projectsPage .project-info h1 {
+	font-weight: bold;
+    padding-bottom: 20px;
+}
+
+#projectsPage .project-info p {
+    font-weight: bold;
+	color: white;
+}
+
+#projectsLink {
+    text-decoration: none;
+}
+
+#projectsButton {
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 0;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #374b49;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+#projectsButton:hover {
+    opacity: 0.8;
+}
+
+#projectsButton:active {
+    opacity: 0.4;
+}
+
+#contactsPage {
+    height: 100vh;
+    width: 100%;
+}
+
+.contactsSection .icon { 
+    cursor: pointer;
+}
+
+.contactsSection .icon a {
+    text-decoration: none;
+    color: white;
+}
+
+.contactsSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.icon2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin: 20px;
+    line-height: 100px;
+    font-size: 40px;
+    box-shadow: 5px 10px 20px black;
+    background-color: #6aadaa;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon2:hover {
+    opacity: 0.8;
+}
+
+.icon2:active {
+    opacity: 0.6;
+}
+
+.icon2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.gmail {
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.gmail:hover {
+    width: 400px;
+    font-size: 30px;
+    font-weight: 600;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 800px) {
+    .aboutParagraph {
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .contactsSection {
+        flex-direction: column;
+        height: fit-content;
+    }
+    #contactsPage {
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #projectsPage {
+        height: 230vh;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .aboutParagraph {
+        width: 540px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #aboutPage {
+        height: 130vh;
+    }
+    .aboutParagraph {
+        width: 400px;
+    }
+    .skillsSection {
+        flex-direction: column;
+        height: fit-content;
+    }
+    #skillsPage {
+        height: 900px;
+    }
+    #projectsPage {
+        height: 250vh;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    #projectsPage {
+        height: 260vh;
+    }
+    #homePage h1 {
+        width: fit-content;
+        margin: 20px;
+    }
+    #navbar ul li {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #homePage h1 {
+        width: fit-content;
+        margin: 10px;
+    }
+    #projectsPage {
+        height: 260vh;
+    }
+    #aboutPage {
+        height: 140vh;
+    }
+    .aboutParagraph {
+        width: fit-content;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #homePage h1 {
+        width: fit-content;
+        margin: 6px;
+        font-size: 28px;
+    }
+    #projectsPage {
+        height: 330vh;
+    }
+    #aboutPage {
+        height: 165vh;
+    }
+    .aboutParagraph {
+        width: fit-content;
+        margin: 20px;
+    }
+    #navbar ul li {
+        font-size: 14px;
+    }
+    .gmail:hover {
+        width: 350px;
+        font-size: 27px;
+        font-weight: 600;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #homePage h1 {
+        width: fit-content;
+        margin: 6px;
+        font-size: 20px;
+    }
+    #projectsPage {
+        height: fit-content;
+    }
+    #aboutPage {
+        height: fit-content;
+    }
+    .aboutParagraph {
+        width: fit-content;
+        margin: 20px;
+    }
+    #navbar ul li {
+        font-size: 10px;
+    }
+    .gmail:hover {
+        width: 240px;
+        font-size: 20px;
+        font-weight: 600;
+        justify-content: space-evenly;
+    }
+}
